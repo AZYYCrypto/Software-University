@@ -1,2 +1,2 @@
 # SoftUni-Work
-Projects from Software University -  - Tasks - HomeWork
+Projects from Software University - Tasks - HomeWork
