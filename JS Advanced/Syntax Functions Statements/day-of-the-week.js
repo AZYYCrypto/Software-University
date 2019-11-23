@@ -12,6 +12,9 @@ function solve(day) {
     return daysMap[day] ? daysMap[day] : "error";
 }
 
-console.log(solve("Monday"));
-console.log(solve("Friday"));
-console.log(solve("Invalid"));
+console.log(
+    solve("Monday"),
+    solve("Friday"),
+    solve("Invalid")
+
+    );

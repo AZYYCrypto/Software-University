@@ -6,12 +6,12 @@ const operations = [[sum, 0], [inverseSum, 0], [stringConcat, ""]];
 function solve(numbers) {
     return operations.map(
         x => numbers.reduce(...x)
-    );
+    ).join("\n");
 }
 
 console.log(
-    solve([1, 2, 3]).join("\n")
+    solve([1, 2, 3])
 );
 console.log(
-    solve([2, 4, 8, 16]).join("\n")
+    solve([2, 4, 8, 16])
 );
