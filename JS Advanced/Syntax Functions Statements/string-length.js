@@ -13,8 +13,10 @@ function solveDec(...params) {
         0
     );
     let avrg = Math.floor(sum / params.length);
-    console.log(sum);
-    console.log(avrg);
+
+    return [sum,avrg];
 }
 
+
 solveDec("chocolate", "ice cream", "cake", "asd", "123asd");
+
