@@ -1,19 +1,16 @@
 function solve(num) {
-    num = num.toString();
-    let sum = 0;
+    var str = String(num);
+    var sum = 0;
+
     for (let i = 0; i < num.length; i++) {
-        sum += Number(num[i]);
+        sum += Number(str[i]);
 
     }
 
-    let result = sum.toString().includes('9')
-    console.log(
-        result? 
-        `${num} Amazing? True`
-        : 
-        `${num} Amazing? False`);
+    var result = String(sum).includes('9');
+    console.log(`${num} Amazing ? ${result ? 'True' : 'False'}`);
 
     
 }
 
-solve(999);
+solve(1233);
