@@ -1,0 +1,87 @@
+/*
+ * Layout
+ * --- --- --- */
+
+body {
+	padding: 2em 3em;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	transition: all 0.3s ease;
+	background: #EFEFEF;
+	border-radius: 0.3em;
+	outline: none;
+
+	&:focus,
+	&:hover {
+		background: #222;
+		color: #FFF;
+	}
+
+	&:active {
+		background: #060;
+		color: #FFF;
+	}
+}
+
+article {
+	max-width: 60rem;
+}
+
+header {
+	padding-bottom: 4rem;
+
+	h1 {
+		margin-bottom: 0;
+	}
+}
+
+section + section {
+	padding-top: 2rem;
+
+	a {
+		background: #FEFEFE;
+	}
+}
+
+section ul {
+	line-height: 1.2;
+	padding-bottom: 2rem;
+
+	li {
+		padding: 1em 2em 0 0;
+
+		& + li {
+		}
+	}
+
+	a {
+		display: block;
+		padding: 1em 1.3em;
+	}
+
+	span:nth-child(1) {
+		display: block;
+		font-weight: 600;
+		font-size: 1.1em;
+	}
+
+	span:nth-child(2),
+	span:nth-child(3) {
+		font-size: 0.9em;
+	}
+		
+	span:nth-child(3) {
+		&:before {
+			display: inline-block;
+			content: '-';
+			padding-right: 0.3em;
+		}
+	}
+
+	span:nth-child(3) {
+		font-size: 0.9em;
+	}
+}
