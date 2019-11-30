@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./plugins/jQuery-Form-Validator/form-validator/jquery.form-validator.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
+    rel="stylesheet" type="text/css" />
+    <title>Form Validator</title>
+    
+</head>
+<body>
+        <form action="" id="registration-form">
+                <p>
+                  E-mail: 
+                  <input name="email" data-validation="email">
+                </p>
+                <p>Username 
+                    <input type="text" name="username" id="user" data-validation="length" data-validation-length="3-12">
+                </p>
+                
+                <p>
+                  Password: 
+                  <input type="password" name="pass_confirmation" data-validation="length" data-validation-length="min8">
+                </p>
+                <p>
+                  Repeat password
+                  <input type="password" name="pass" data-validation="confirmation">
+                </p>
+                <p>
+                  Country
+                  <input name="country" id="country" data-validation="country">
+                </p>
+                <p>
+                  Profile image
+                  <input name="image" type="file" data-validation="mime size required" 
+                       data-validation-allowing="jpg, png" 
+                       data-validation-max-size="300kb" 
+                       data-validation-error-msg-required="No image selected">
+                </p>
+                <p>
+                  <input type="checkbox" data-validation="required" 
+                       data-validation-error-msg="You have to agree to our terms">
+                  I agree to the <a href="..." target="_blank">terms of service</a>
+                </p>
+                
+                <p>
+                  <input type="submit" value="Validate">
+                  <input type="reset" value="Reset form">
+                </p>
+              </form>
+              <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+              <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+              <script>
+              
+                $.validate({
+                  modules : 'location, date, security, file',
+                  onModulesLoaded : function() {
+                    $('#country').suggestCountry();
+                  }
+                });
+              
+                // Restrict presentation length
+                $('#presentation').restrictLength( $('#pres-max-length') );
+              
+              </script>
+    
+</body>
+</html>
