@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Collapse</title>
+</head>
+<body>
+        <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header bg-info" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link text-light font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        HTML
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body font-italic">
+                            is the main markup language for description and design on web pages . HTML is standard on the Internet , and the rules are set by the international W3C consortium . The current version of the standard is HTML 5.0 (as of October 28, 2014)
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-info" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed text-light font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        CSS
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body font-italic">
+                            is a style description language (style sheet language) - used primarily to describe the presentation of a document written in markup language. Most commonly used in conjunction with HTML , but can be applied to any XML document. The CSS specification is officially supported by W3C .
+
+CSS was created to separate the content and structure of web pages separately from their visual presentation. Prior to the CSS standards established by W3C in 1995, site content and design style were written in the same HTML page. As a result, HTML code becomes complex and illegible, and any change in the design of a site requires that the correction be applied throughout the site page by page. Using CSS, the formatting settings can be put into a single file, and then the change will be reflected simultaneously on all pages that use that CSS file.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-info" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed text-light font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        JavaScript
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body font-italic">
+                            is an interpretable programming language distributed by most Web browsers . Supports object-oriented and functional programming style. It was created in Netscape in 1995. It is most commonly applied to HTML on a Web site for the purpose of adding functionality and loading data . It can also be used to write JSON server scripts , as well as many other applications. JavaScript should not be confused with Java, the name matching is the result of a Netscape marketing solution. Javascript is standardized under the name EcmaScript.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
