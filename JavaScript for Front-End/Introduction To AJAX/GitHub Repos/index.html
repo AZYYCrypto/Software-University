@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>GitHub username:</div>
+    <input type="text" id="username" value="">
+    <button onclick="loadRepos()">Load Repos</button>
+    <ul id="repos" style="display: none;">
+        <li >
+            <a href="{repo.html_url}">
+                {repo.full_name}
+            </a>
+        </li>
+    </ul>
+    <script>
+        function loadRepos() {
+            let list = $('#repos');
+            list.css('display','block').empty();
+            list.css('list-style-type', 'none');
+
+            
+            let username = $('#username').val();
+            console.log(username);
+
+            let url = 'https://api.github.com/users/' + username + '/repos';
+
+
+            $.ajax({
+                
+                url: url ,
+                success: success ,
+                  error: error 
+            });
+                 
+
+            function success(res) {
+                for (repos of res) {
+                    
+                    let aLink = $('<a>').text(repos.full_name)
+                    aLink.attr('href', repos.html_url)
+                    $('#repos').append($('<li>').append(aLink));
+
+                }
+                
+            }
+
+function error(err) {
+    console.log(err);
+    $('#repos').append($('<li>').text(`Error 404 /// Status Code: ${err.status}`));
+    
+}
+        
+        }
+    </script>
+</body>
+</html>
