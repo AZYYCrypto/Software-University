@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/bootstrap-social.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap-social.less">
+    <link rel="stylesheet" href="./dist/css/bootstrap-social.scss">
+    <script src="https://use.fontawesome.com/1ecfee5e7c.js"></script>
+        <link rel="stylesheet" href="dist/css/dropify.min.css">
+        <link rel="stylesheet" href="./dist/css/sweetalert.css">
+
+    <title>Job App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron bg-info">
+            <h1 class="text-center text-light">JOB APPLICATION</h1>
+            <p class="font-italic text-center text-light">WE ARE LOOKING FOR SOMEONE LIKE YOU!</p>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header bg-info " id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link text-light " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Enter your data
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1" >First name</label>
+                                      <input type="text" class="form-control" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Last Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <br>
+                                        <div class="form-group"> 
+
+
+
+                                            <a class="btn  btn-social btn-facebook text-light facebook">
+                                                <span class="fa fa-facebook" id="facebook"></span> Sign up with Facebook
+                                            </a>
+                                            <a class="btn  btn-social btn-google text-light google">
+                                                <span class="fa fa-google"></span> Sign up with Google
+                                             </a>
+                                        </div>
+                                  </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-info " id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Social Media Profiles
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                                <label for="twitter" class="btn btn-inline  btn-twitter  fa fa-twitter-square"></label>
+                        </div>
+                        <input id="twitter" type="text" class="form-control" placeholder="Enter Twitter Profile" aria-label="twitter" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                    <label for="facebook" class="btn btn-inline  btn-facebook  fa fa-facebook-square"></label>
+                            </div>
+                            <input id="facebook" type="text" class="form-control" placeholder="Enter Facebook Profile" aria-label="facebook" aria-describedby="basic-addon1">
+                            </div>
+
+
+                                <div class="input-group input-group-lg">
+                                        <div class="input-group-prepend">
+                                                <label for="github" class="btn btn-inline  btn-github  fa fa-github-square"></label>
+                                        </div>
+                                        <input id="github" type="text" class="form-control" placeholder="Enter GitHub Profile" aria-label="github" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group  input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <label for="linkedin" class="btn btn-inline  btn-linkedin  fa fa-linkedin-square"></label>
+                                                    
+                                                </div>
+                                                <input type="text" id="linkedin"  class="form-control" placeholder="Enter Linkedin Profile" aria-label="linkedin" aria-describedby="basic-addon1">
+                                                </div>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header bg-info" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Upload CV
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                            <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-3"></div>
+                                        <div class="col-sm-6">
+                                            
+                                            <label for="input-file-now"></label>
+                                            <input type="file" id="input-file-now" class="dropify" />
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                           
+<div class="jumbotron text-center bg-info">
+
+    <button   class="btn btn-primary bg-info text-light btn-outline-light font-weight-bold ">
+        SUBMIT</button>
+</div>
+
+              
+              
+        </div>
+        
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="dist/js/dropify.min.js"></script>
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/app2.js"></script>
+    <script src="./src/js/sweetalert.js"></script>
+</body>
+</html>
