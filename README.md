@@ -32,7 +32,9 @@
   <td><a href=""></a></td> 
   <td><a href=""></a></td> 
 </tr>
-
+<tr>
+<td><a href="">WordPress Basics</a></td>
+        </tr>
 
 </tbody>
 </table>
