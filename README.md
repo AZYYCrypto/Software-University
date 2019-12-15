@@ -20,7 +20,7 @@
 <tbody>
 <tr> 
 <td><a href="#html-and-css">HTML & CSS</a></td> 
-  <td><a href=""></a></td> 
+  <td><a href=""></a>JS basic</td> 
   <td><a href=""></a></td> 
   <td><a href=""></a></td> 
   <td><a href=""></a></td> 
@@ -33,7 +33,7 @@
   <td><a href=""></a></td> 
 </tr>
 <tr>
-<td><a href="">WordPress Basics</a></td>
+<td><a href=""></a></td>
         </tr>
 
 </tbody>
