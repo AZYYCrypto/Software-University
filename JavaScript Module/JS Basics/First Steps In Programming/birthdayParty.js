@@ -6,5 +6,3 @@ function birthdayParty(input) {
 
         console.log(priceOfDrinks);
 }
-
-birthdayParty(["2250"]);
