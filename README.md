@@ -20,7 +20,7 @@
 <tbody>
 <tr> 
 <td><a href="#html-and-css">HTML & CSS</a></td> 
-  <td><a href="https://github.com/AZYYCrypto/Software-University/tree/master/JavaScript%20Module/JS%20Basics">JS Basics</a></td> 
+  <td><a href="js-basics">JS Basics</a></td> 
   <td><a href=""></a></td> 
   <td><a href=""></a></td> 
   <td><a href=""></a></td> 
