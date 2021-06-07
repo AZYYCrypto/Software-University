@@ -1,8 +1,11 @@
 function birthdayParty(input) {
-        let rentOfRoom = Number(input[0]);
+        let rentHall = Number(input[0]);
 
-        let priceOfCakes = rentOfRoom * 0.2;
-        let priceOfDrinks = priceOfCakes - 0.45;
+        let cakePrice = rentHall * 0.20;
+        let drinks = cakePrice * 0.55;
+        let animator = rentHall / 3;
 
-        console.log(priceOfDrinks);
+        let budget = rentHall + cakePrice + drinks + animator;
+
+        console.log(budget);
 }
