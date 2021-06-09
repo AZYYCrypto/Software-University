@@ -8,4 +8,4 @@ function evenOrOdd(input) {
     }
 }
 
-evenOrOdd()
+evenOrOdd(["2"]);
