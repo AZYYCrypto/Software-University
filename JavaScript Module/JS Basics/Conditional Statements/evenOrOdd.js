@@ -7,3 +7,5 @@ function evenOrOdd(input) {
         console.log("odd");
     }
 }
+
+evenOrOdd()
